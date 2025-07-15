@@ -105,7 +105,7 @@ class CustomDataset(Dataset):
                                 
                 return {
                     'image': self.transform(img),
-                    'label': self.labels[index]
+                    'label': self.labels[index]  # cab contain single or several labels
                 }
         except Exception as e:
             print(f"error while opening image at index {index}, path: {self.paths[index]}")
