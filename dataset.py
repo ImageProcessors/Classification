@@ -4,7 +4,7 @@ from torch.utils.data import Dataset
 from PIL import Image
 import torchvision.transforms as transforms
 import polars as pl
-import cv2 as cv
+
 
 def convert_csv_to_parquet(csv_path, parquet_path):
     df = pl.scan_csv(
