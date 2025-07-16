@@ -5,7 +5,6 @@ from PIL import Image
 import torchvision.transforms as transforms
 import polars as pl
 # testing coment for git
-
 def convert_csv_to_parquet(csv_path, parquet_path):
     """تبدیل بهینه CSV به Parquet با استفاده از Polars"""
     df = pl.read_csv(
