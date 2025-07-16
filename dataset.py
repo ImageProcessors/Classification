@@ -4,14 +4,7 @@ from torch.utils.data import Dataset, DataLoader
 from PIL import Image
 import torchvision.transforms as transforms
 import polars as pl
-import torch
-import numpy as np
-from torch.multiprocessing import set_start_method
-
-# تنظیم روش multiprocessing برای ویندوز
-set_start_method('spawn', force=True)
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+# testing coment for git
 
 def convert_csv_to_parquet(csv_path, parquet_path):
     """تبدیل بهینه CSV به Parquet با استفاده از Polars"""
